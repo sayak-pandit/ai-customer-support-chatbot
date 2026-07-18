@@ -24,10 +24,35 @@ Rules you must follow:
 BRIGHTCART KNOWLEDGE BASE:
 ${JSON.stringify(knowledgeBase, null, 2)}`;
 
+const MAX_MESSAGE_LENGTH = 500;
+
+function getSafeErrorDetails(error) {
+  return {
+    name: error?.name || "Error",
+    message: error?.message || "Unknown chat API error",
+    status: error?.status || error?.code,
+  };
+}
+
 export async function POST(request) {
   try {
     const body = await request.json();
-    const message = typeof body.message === "string" ? body.message.trim() : "";
+
+    if (!body || typeof body !== "object" || Array.isArray(body)) {
+      return Response.json(
+        { error: "The request format is invalid." },
+        { status: 400 },
+      );
+    }
+
+    if (typeof body.message !== "string") {
+      return Response.json(
+        { error: "Please enter a question before sending." },
+        { status: 400 },
+      );
+    }
+
+    const message = body.message.trim();
 
     if (!message) {
       return Response.json(
@@ -36,9 +61,11 @@ export async function POST(request) {
       );
     }
 
-    if (message.length > 500) {
+    if (message.length > MAX_MESSAGE_LENGTH) {
       return Response.json(
-        { error: "Please keep your question under 500 characters." },
+        {
+          error: `Please keep your question under ${MAX_MESSAGE_LENGTH} characters.`,
+        },
         { status: 400 },
       );
     }
@@ -48,9 +75,12 @@ export async function POST(request) {
     }
 
     if (!process.env.OPENAI_API_KEY) {
-      console.error("OPENAI_API_KEY is not configured.");
+      console.error("BrightCart chat API configuration missing.");
       return Response.json(
-        { error: "The support assistant is not configured yet. Please try again later." },
+        {
+          error:
+            "Sorry, the assistant is unavailable right now. Please try again shortly.",
+        },
         { status: 503 },
       );
     }
@@ -85,9 +115,12 @@ export async function POST(request) {
       );
     }
 
-    console.error("BrightCart chat API error:", error);
+    console.error("BrightCart chat API error:", getSafeErrorDetails(error));
     return Response.json(
-      { error: "Sorry, the assistant is unavailable right now. Please try again shortly." },
+      {
+        error:
+          "Sorry, the assistant is unavailable right now. Please try again shortly.",
+      },
       { status: 500 },
     );
   }

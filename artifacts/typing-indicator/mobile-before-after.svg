@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="900" viewBox="0 0 980 900" role="img" aria-label="Mobile before and after comparison of the BrightCart AI typing indicator">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#94a3b8" flood-opacity="0.25"/>
+    </filter>
+    <style>
+      .title{font:800 30px Arial,Helvetica,sans-serif;fill:#0f172a}
+      .sub{font:400 15px Arial,Helvetica,sans-serif;fill:#475569}
+      .label{font:700 16px Arial,Helvetica,sans-serif;fill:#0f172a}
+      .tag{font:700 12px Arial,Helvetica,sans-serif;fill:#047857}
+      .h1{font:800 22px Arial,Helvetica,sans-serif;fill:#0f172a}
+      .small{font:500 12px Arial,Helvetica,sans-serif;fill:#64748b}
+      .chatTitle{font:700 15px Arial,Helvetica,sans-serif;fill:#0f172a}
+      .speaker{font:700 12px Arial,Helvetica,sans-serif;fill:#64748b}
+      .speakerUser{font:700 12px Arial,Helvetica,sans-serif;fill:#047857}
+      .bodyWhite{font:400 14px Arial,Helvetica,sans-serif;fill:white}
+      .caption{font:400 14px Arial,Helvetica,sans-serif;fill:#475569}
+    </style>
+  </defs>
+  <rect width="980" height="900" fill="#e9edf4"/>
+  <text x="60" y="64" class="title">Mobile View</text>
+  <text x="60" y="91" class="sub">The new indicator keeps the same compact message width as assistant replies.</text>
+
+  <g transform="translate(60 130)">
+    <rect width="400" height="690" rx="24" fill="#fff" stroke="#cbd5e1" filter="url(#shadow)"/>
+    <rect width="400" height="52" rx="24" fill="#fff"/>
+    <line x1="0" y1="52" x2="400" y2="52" stroke="#e2e8f0"/>
+    <text x="22" y="33" class="label">Before</text>
+    <rect x="290" y="14" width="88" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="307" y="31" class="tag">Dots only</text>
+    <rect x="18" y="72" width="364" height="600" fill="#f5f7fb"/>
+    <g transform="translate(38 98)">
+      <rect width="42" height="42" rx="16" fill="#059669"/>
+      <text x="14" y="27" font-family="Arial" font-size="13" font-weight="800" fill="white">BC</text>
+      <text x="56" y="20" class="h1">BrightCart AI</text>
+      <text x="56" y="39" class="small">24/7 Customer Support Assistant</text>
+    </g>
+    <g transform="translate(38 164)">
+      <rect width="324" height="420" rx="24" fill="#fff" stroke="#cbd5e1"/>
+      <line x1="0" y1="64" x2="324" y2="64" stroke="#f1f5f9"/>
+      <circle cx="34" cy="32" r="18" fill="#d1fae5"/>
+      <text x="26" y="37" font-family="Arial" font-size="12" font-weight="800" fill="#047857">AI</text>
+      <text x="62" y="27" class="chatTitle">BrightCart AI Support</text>
+      <text x="62" y="46" class="small">Grounded support answers</text>
+      <rect x="0" y="64" width="324" height="278" fill="#f8fafc" opacity="0.86"/>
+      <text x="204" y="116" class="speakerUser">You</text>
+      <rect x="128" y="124" width="164" height="48" rx="16" fill="#059669"/>
+      <path d="M292 156 L292 172 L276 172 Z" fill="#059669"/>
+      <text x="146" y="154" class="bodyWhite">Can I cancel my order?</text>
+      <rect x="28" y="204" width="72" height="48" rx="16" fill="#fff" stroke="#e2e8f0"/>
+      <path d="M28 236 L28 252 L44 252 Z" fill="#fff" stroke="#e2e8f0"/>
+      <circle cx="51" cy="228" r="4" fill="#10b981" opacity="0.45"/>
+      <circle cx="65" cy="228" r="4" fill="#10b981" opacity="0.75"/>
+      <circle cx="79" cy="228" r="4" fill="#10b981" opacity="0.45"/>
+      <rect x="0" y="342" width="324" height="78" fill="#fff"/>
+      <line x1="0" y1="342" x2="324" y2="342" stroke="#f1f5f9"/>
+      <rect x="16" y="358" width="236" height="46" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="34" y="387" class="small">Ask BrightCart...</text>
+      <rect x="264" y="358" width="44" height="46" rx="16" fill="#020617"/>
+      <text x="278" y="387" font-family="Arial" font-size="16" font-weight="800" fill="white">&gt;</text>
+    </g>
+    <text x="38" y="625" class="caption">Small, but anonymous.</text>
+  </g>
+
+  <g transform="translate(520 130)">
+    <rect width="400" height="690" rx="24" fill="#fff" stroke="#cbd5e1" filter="url(#shadow)"/>
+    <rect width="400" height="52" rx="24" fill="#fff"/>
+    <line x1="0" y1="52" x2="400" y2="52" stroke="#e2e8f0"/>
+    <text x="22" y="33" class="label">After</text>
+    <rect x="254" y="14" width="124" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="270" y="31" class="tag">Assistant styled</text>
+    <rect x="18" y="72" width="364" height="600" fill="#f5f7fb"/>
+    <g transform="translate(38 98)">
+      <rect width="42" height="42" rx="16" fill="#059669"/>
+      <text x="14" y="27" font-family="Arial" font-size="13" font-weight="800" fill="white">BC</text>
+      <text x="56" y="20" class="h1">BrightCart AI</text>
+      <text x="56" y="39" class="small">24/7 Customer Support Assistant</text>
+    </g>
+    <g transform="translate(38 164)">
+      <rect width="324" height="420" rx="24" fill="#fff" stroke="#cbd5e1"/>
+      <line x1="0" y1="64" x2="324" y2="64" stroke="#f1f5f9"/>
+      <circle cx="34" cy="32" r="18" fill="#d1fae5"/>
+      <text x="26" y="37" font-family="Arial" font-size="12" font-weight="800" fill="#047857">AI</text>
+      <text x="62" y="27" class="chatTitle">BrightCart AI Support</text>
+      <text x="62" y="46" class="small">Grounded support answers</text>
+      <rect x="0" y="64" width="324" height="278" fill="#f8fafc" opacity="0.86"/>
+      <text x="204" y="116" class="speakerUser">You</text>
+      <rect x="128" y="124" width="164" height="48" rx="16" fill="#059669"/>
+      <path d="M292 156 L292 172 L276 172 Z" fill="#059669"/>
+      <text x="146" y="154" class="bodyWhite">Can I cancel my order?</text>
+      <text x="30" y="207" class="speaker">BrightCart AI</text>
+      <rect x="28" y="216" width="92" height="48" rx="16" fill="#fff" stroke="#e2e8f0"/>
+      <path d="M28 248 L28 264 L44 264 Z" fill="#fff" stroke="#e2e8f0"/>
+      <circle cx="55" cy="240" r="4" fill="#10b981" opacity="0.45"/>
+      <circle cx="73" cy="240" r="4" fill="#10b981" opacity="0.75"/>
+      <circle cx="91" cy="240" r="4" fill="#10b981" opacity="0.45"/>
+      <rect x="0" y="342" width="324" height="78" fill="#fff"/>
+      <line x1="0" y1="342" x2="324" y2="342" stroke="#f1f5f9"/>
+      <rect x="16" y="358" width="236" height="46" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="34" y="387" class="small">Ask BrightCart...</text>
+      <rect x="264" y="358" width="44" height="46" rx="16" fill="#020617"/>
+      <text x="278" y="387" font-family="Arial" font-size="16" font-weight="800" fill="white">&gt;</text>
+    </g>
+    <text x="38" y="625" class="caption">Still compact, now clearly from BrightCart AI.</text>
+  </g>
+</svg>

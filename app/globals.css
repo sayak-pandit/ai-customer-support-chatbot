@@ -47,7 +47,8 @@ button {
   height: 0.4rem;
   border-radius: 9999px;
   background: #10b981;
-  animation: typing-bounce 1.2s infinite ease-in-out;
+  opacity: 0.42;
+  animation: typing-pulse 1.4s infinite ease-in-out;
 }
 
 .typing-dot:nth-child(2) {
@@ -58,15 +59,13 @@ button {
   animation-delay: 0.3s;
 }
 
-@keyframes typing-bounce {
+@keyframes typing-pulse {
   0%,
   60%,
   100% {
-    transform: translateY(0);
     opacity: 0.45;
   }
   30% {
-    transform: translateY(-0.25rem);
     opacity: 1;
   }
 }
@@ -78,5 +77,10 @@ button {
     scroll-behavior: auto !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+
+  .typing-dot {
+    animation: none !important;
+    opacity: 0.65;
   }
 }
